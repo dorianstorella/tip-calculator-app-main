@@ -14,7 +14,11 @@ body {
     letter-spacing:0.7px ;
     font-size: 15px;
     word-spacing: 2mm;
-    
+    display: block;
+}
+
+h1 {
+    text-align: center;
 }
 
 .container {
@@ -46,6 +50,7 @@ body {
     margin-left:3px;
 }
 
+
 #bill,
 #num-people {
     width: 98%;
@@ -54,9 +59,14 @@ body {
     border-radius: 7px;
     background-color: #f3f8fb;
     text-align: right;
-    color: #0a5251;
+    color:#c5e4e7;
     outline: 0;
     margin-bottom: 30px;
+    font-size: 24px;
+}
+
+#bill::marker {
+    content: url(images/icon-dollar.svg);
 }
 
 #bill:focus,
@@ -86,6 +96,7 @@ body {
     text-align: center;
 }
 
+
 .active{
     background-color: #9fe8df;
     color:#0a5251;
@@ -102,6 +113,11 @@ body {
     display:grid;
     grid-template-columns: auto auto;
     margin:40px 50px;
+}
+
+#custom {
+    background-color: #f3f8fb;
+    color: #00474b;
 }
 
 .rslt-amout,
